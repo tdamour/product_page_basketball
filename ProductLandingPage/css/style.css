@@ -1,0 +1,594 @@
+/* Desktop Sizes */ 
+
+/* GENERAL */
+*{
+	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* BODY */ 
+body{
+	margin: 0 auto;
+	font-family: sans-serif; 
+	background-color: #DCDCDC;  /* Gainsbro color - like light light grey */ 
+	min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+	overflow-x: hidden;
+}
+
+
+/* HEADER */ 
+header {
+	all:unset; 
+	display: grid;
+	grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; 
+	background-color: #000;
+	color: #fff; 
+	width: 100%; 
+	margin: 0; 
+}
+
+#brand{
+	display: grid; 
+	flex-direction: row;
+	justify-content: center; 
+	grid-column: 1 / span 1
+}
+
+#brand span{
+	 display:flex;
+    align-items: center;
+}
+
+#logo-img-link{
+	grid-column: 1; 
+	display: flex;
+	flex-direction: flex-start; 
+}
+
+#brand_txt {
+	 flex-grow:0;
+    flex-shrink:0;
+	font-size: 1.4rem; 
+}
+
+#header-img{
+	  display: flex;
+	  padding: 15px 20px 15px 20px;
+	  width: 100px;
+	  height: 100px;
+	  margin: auto;
+	  vertical-align:top; 
+	  margin: 0 auto; 
+}
+
+
+/* NAVIGATION */ 
+.nav-toggle{
+		display: none; 
+}
+
+nav {
+	grid-column: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	margin-left: 14em;
+}
+
+nav ul {
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content:flex-end; 
+	 
+}
+
+nav ul li{
+	margin-left: 1em; 
+	padding: 1em; 
+	
+}
+
+nav a{
+	color: #fff; 
+	text-decoration: none; 
+	font-size: 1.2rem; 
+	text-transform: uppercase;
+}
+
+nav a:hover{
+	color: yellow; 
+	cursor: pointer; 
+}
+
+.sticky{
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	
+}
+
+
+
+/* CONTENT */ 
+
+#content{
+	width: 100%;
+    overflow-x: hidden;	
+}
+
+
+.section{
+	word-wrap: break-word;
+	width: 100%; 
+	overflow-wrap: break-word; 
+	margin: 0 auto;   
+}
+
+.section_title{
+	width: 100%;	
+}
+
+.section h2, .section-pushTop h2{
+	padding: 10px; 
+	margin: 0 auto; 
+	margin-left: 55px; 
+}
+
+.section p, .section-pushTop p{
+	margin: 0 auto; 
+	width: 90%;
+	padding: 10px; 
+}
+
+.section-pushTop{
+	margin-top:0;
+	word-wrap: break-word;
+	width: 100%; 
+	overflow-wrap: break-word; 
+	margin: 0 auto;   
+}
+
+/* form-box */ 
+#intro_div{
+	display: flex;
+	justify-content:center;
+	align-items:center; 
+}
+
+#form-box{
+		background-color: orange;
+		color: #000;
+		border: 8px double #000;
+		padding: 15px;
+		margin: 0 auto; 
+		margin-top: 25px; 
+		margin-bottom: 10px;
+		width: 60%; 
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center; 
+}
+
+#form-box h1 {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.form-div{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center; 
+}
+
+.form-div form{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center; 
+}
+
+.form-div form input{
+	border: 1px solid #000; 
+	padding: .5rem;  
+	margin: 2px 0; 
+	
+}
+
+.form-div form input[type=text], .form-div form input[type=password], .form-div form input[type=email]
+{
+	width: 110%;
+	border-radius: 25px;
+	padding: 10%; 
+	font-size: .9rem; 
+	text-align:center; 
+}
+
+.form-div form .btn{
+	background-color: #000; 
+	color: orange; 
+	border: 1.5px solid #FFF; 
+	font-weight: bold; 
+	padding: 15.5px; 
+	border-radius: 25px; 
+	width: 90%;
+	font-size: .9rem;
+}
+
+.form-div form .btn:hover{
+	background-color: yellow; 
+	color: #000; 
+	border: 1.5px solid #000;
+	cursor: pointer; 
+	font-weight: bold; 
+}
+
+/* Videos */ 
+#video-fig{
+	margin: 0 auto;
+	padding: 20px 10px;
+	width:50%;
+}
+.video-div{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+}
+
+.video-div iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* CARDS  */
+.product_band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center; 
+  align-items: center; 
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; 
+  min-height: 100%;
+  position: relative;
+  top: 0;
+   transition: all .1s ease-in;
+   margin: 1em 0em; 
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.card article {
+  padding: 20px;
+}
+ 
+/* typography */
+.card h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+ 
+.card p { 
+  line-height: 1.4;
+}
+ 
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  margin: 2em 0 0 0;
+}
+
+.card .thumb{
+	padding-bottom: 60%;
+	background-size: cover;
+	background-position: center center; 
+}
+
+.card article{
+	padding: 20px; 
+	flex:1;
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between; 
+}
+
+.card p {
+	flex: 1;
+	line-height: 1.4; 
+}
+
+/* FOOTER */ 
+footer{
+	background-color: #000;
+	min-height: 50px; 
+	grid-row-start: 3;
+	color: #fff; 
+}
+
+#footer-row{
+	padding: 2em; 
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between; 
+}
+
+#footer-left{
+    display: flex;
+	justify-content:center; 
+	align-items: center; 
+	width: 100%; 
+}
+
+#footer-right{
+	display: flex;
+	justify-content:center; 
+	align-items: center; 
+	width: 100%; 
+}
+
+#footer-right .nav-menu {
+	list-style: none; 
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	margin: 0 auto; 
+}
+
+#footer-right .nav-menu li {
+	margin: 3px 2.5px; 
+}
+
+#footer-right .nav-menu a{
+	text-decoration:none; 
+	color: #fff;
+	cursor: pointer; 
+}
+
+#footer-right .nav-menu a:hover{
+	color: yellow; 
+}
+
+/* PHONE & TABLETS  */ 
+
+@media only screen and (min-width: 240px) and (max-width: 1080px){
+	body{
+		padding: 0 0 0 0;
+	}
+	header{
+		all: unset; 
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		position: fixed;
+		top: 0; 
+		z-index: 999;
+		width: 100%;
+		background-color: #000;
+		color: #fff; 
+		margin: 0;
+		height: 160px; 
+	}
+	#brand {
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;		
+	}
+	#brand span {
+		display: flex; 
+		flex-direction:  row;
+		width: 100%; 
+	}
+	
+	#brand_txt{
+		display: none; 
+	}
+	
+	#logo-img-link{
+		margin: 0; 
+	}
+	
+	#header-img{
+		justify-content:center; 
+	    align-items: center; 
+	}
+	
+	nav{
+		/* position: fixed; */  
+	    text-align: center;
+	    top: 100%; 
+		width: 100%; 
+	    transform: scale(1, 0); 
+	    transform-origin: top; 
+	    transition: transform 400ms ease-in-out; 
+		background-color: #000; 
+		margin-left: 0;
+		
+	}
+	nav a{
+	  opacity: 0; 
+	  transition: opacity 150ms ease-in-out; 
+	}
+	
+	.nav-toggle{
+		display: none; 
+	}
+	
+	
+	.nav-toggle:checked ~ nav{
+		 display: flex; 
+		flex-direction:column; 
+		justify-items: center; 
+		margin: 0 auto;
+		padding: 0 auto;
+		transform: scale(1,1);		
+	}
+	
+	.nav-toggle:checked ~ nav a{
+		opacity: 1; 
+		transition: opacity 250ms ease-in-out 250ms; 
+	}
+	
+	.nav-toggle-label{
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+		margin-right: 1em; 
+		background-color: orange;
+		padding: 7px; 
+		height: 20%; 
+		display: flex;
+		align-items: center; 
+		justify-content: center; 
+	}
+	
+	/* nav{
+		position: absolute; 
+		text-align: right;
+		top: 100%;
+		right: 0; 
+		display: none; 
+		background-color: #000; 
+		width: 100%; 
+	} */ 
+	
+	nav ul{
+		text-align: center; 
+		flex-direction:column; 
+		width: 100%; 
+	
+	} 
+	
+	nav ul li{
+		margin: 0 auto; 
+		align-items: center;
+		justify-content: center;
+		padding: 1em;
+		text-align:center; 
+		width: 50%; 
+	}
+	
+	nav a{
+		text-align: center;
+		padding: 5px;
+		margin: 0 auto; 
+	}
+	
+
+	.nav-toggle-label span,
+	.nav-toggle-label span::before, 
+	.nav-toggle-label span::after {
+		display: block;
+		background: #000;
+		height: 2px; 
+		width: 2em;
+		border-radius: 2px; 
+		position: relative; 
+	}
+
+	.nav-toggle-label span::before, 
+	.nav-toggle-label span::after{
+		content: ''; 
+		position: absolute; 
+	}
+
+	.nav-toggle-label span::before{
+		bottom: 7px;
+	}
+
+	.nav-toggle-label span::after{
+		top: 7px;
+	}
+	
+	.nav-toggle-label.active span{
+		background-color: orange;
+	}
+	.nav-toggle-label.active span:before{
+		top: 0; 
+		transform: rotate(45deg); 
+	}
+	.nav-toggle-label.active span:after{
+		top: 0; 
+		transform: rotate(135deg); 
+	}
+	
+	
+	/* CONTENT */
+	
+	#content{
+		margin-top: 185px; 
+	}
+	
+	main{
+		padding: 45px 0 0 0;
+	}
+	
+	.section h2{
+		padding: 10px; 
+		margin: 0 auto; 
+		margin-left: 15px; 
+    }
+	
+	.content_section{
+		padding: 0;
+		height: calc(100% - 67px);
+		/* padding-top: 12.5rem;*/ 
+	}
+	
+	#form-box{
+		width: 72.5%;
+	}
+	
+	
+	/* Videos */ 
+	#video-fig{
+		width: 80%; 
+	}
+	
+	/* GRID SYSTEM  */
+
+	/* https://webdesign.tutsplus.com/tutorials/solving-problems-with-css-grid-and-flexbox-the-card-ui--cms-27468 */
+	/* Start at Thumbnails */ 
+	/* FOOTER */ 
+	
+}
+
+/* DESKTOP ONLY */ 
+
+@media only screen and (min-width: 850px) {
+  .product_band {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

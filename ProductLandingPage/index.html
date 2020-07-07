@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Landing Page - Free Code Camp</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+  rel="stylesheet">
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+  <script src="js/menuPureJS.js" defer></script>
+  <script src="js/resizeYoutubeVids.js" defer></script>	
+  <script src="js/date.js" defer></script> 
+</head>
+<body class="grid">
+  <header id="header">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <div id="brand">
+      <span>
+      <a href="#" id="logo-img-link"><img src="img/logo.png" alt="World Basketball Company logo" id="header-img"></a>
+      <h1 id="brand_txt">World Basketball Company</h1>
+      </span>
+    </div>
+    <nav id="nav-bar">
+      <ul class="nav-menu">
+	  <!--  onclick="scrollToSection(this)"-->
+        <li class="nav-link"><a href="#about_div" class="scroll">ABOUT</a></li>
+        <li class="nav-link"><a href="#features_div" class="scroll">FEATURES</a></li>
+        <li class="nav-link"><a href="#price_div"  class="scroll">PRICING</a></li>
+      </ul>
+    </nav>
+	<label for="nav-toggle" class="nav-toggle-label">
+		<span></span>
+	</label>
+  </header>
+  <div id="content"> 
+	 
+		<section class="section" id="intro_div">
+			<div id="form-box">
+			  <div class="form-div">
+				  <h1>Best Balls in the World!</h1>
+					<form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
+					  <input type="email"  class="text_box" name="" placeholder="Email" id="email" required />
+					  <input class="btn" type="submit" value="GET STARTED" id="submit" />
+					</form>
+				</div>
+		   <hr id="intro_div_hr">
+			<div id="login-register-div" class="form-div">
+				<form action="" class="form">
+					<input type="text" class="text_box" name="" id="" id="Username" placeholder="username"/>
+					<input type="password"  class="text_box" name="" id="Password" placeholder="password">
+					<input class="btn" type="submit" value="LOGIN" id="login_submit">
+				</form>
+			</div>
+		 </div>
+		 </section>
+		  <main>
+		 <section class="section content_section section-pushTop" id="about_div">
+		  <h2>About</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation</p>
+		 </section>
+		 
+		  <section class="section content_section" id="features_div">
+		  <h2>Features</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation</p>
+			<figure id="video-fig">
+			<div class="video-div">
+			<iframe width="560" height="349" src="https://www.youtube.com/embed/zi-7Dw4BMqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			</figure>
+		  </section>
+		  
+		  <section class="section content_section" id="price_div">
+			<h2>Pricing</h2>
+			<div id="pricing_layout" class="product_band">
+				<div class="product-1">
+					<a href="" class="card">
+						<div class="thumb" style="background-image: url('img/joe_rogan.jpg');"></div>
+						<article>
+							<h1>Regular Package</h1>
+							<span>For you average Joe. Affordable prices for singles and families.</span> 
+						</article>
+					</a>
+				</div>
+				<div class="product-2">
+					<a href="" class="card">
+						<div class="thumb" style="background-image: url('img/college.jpg');"></div>
+						<article>
+							<h1>College Package</h1>
+							<span>For those on the college grind. Get the best deals on a budget while on campus.</span> 
+						</article>
+					</a>
+				</div>
+				<div class="product-3">
+					<a href="" class="card">
+						<div class="thumb" style="background-image: url('img/rookie.jpg');"></div>
+						<article>
+							<h1>Rookie Package</h1>
+							<span>Young upstart in the college, street or pro game. Better bounce and grip for the next best stage in life.</span> 
+						</article>
+					</a>
+				</div>
+			</div>
+			<div id="pricing_layout" class="product_band">
+				<div class="product-1">
+					<a href="" class="card">
+						<div class="thumb" style="background-image: url('img/pro.jpg');"></div>
+						<article>
+							<h1>Pro Package</h1>
+							<span>You're getting those years in the pros. Time for something that always firm and on time.</span> 
+						</article>
+					</a>
+				</div>
+				<div class="product-2">
+					<a href="" class="card">
+						<div class="thumb" style="background-image: url('img/superstar.jpg');"></div>
+						<article>
+							<h1>Superstar Package</h1>
+							<span>For those that dream of Hollywood and Broadway lights. From Staples to Madison Square Garden, get the top line of balls</span> 
+						</article>
+					</a>
+				</div>
+				<div class="product-3">
+					<a href="" class="card">
+						<div class="thumb" style="background-image: url('img/legend.jpg');"></div>
+						<article>
+							<h1>Legend Package</h1>
+							<span>Dare to become immortalized in gold. The best deals only for the best cream of the best crops.</span> 
+						</article>
+					</a>
+				</div>
+			</div>
+		  </section>
+	  
+		</main>
+	 
+	</div>
+  <footer id="footer">
+	<div id="footer-row">
+		<div id="footer-left">
+			<p class="copyright">&nbsp;&nbsp;&copy; <span id="year"></span> - Tim DaMour</p>
+		</div>
+		<div id="footer-right">
+		</div> 
+	</div>
+  </footer>
+</body>
+</html>

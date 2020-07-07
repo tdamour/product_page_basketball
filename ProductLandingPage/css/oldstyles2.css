@@ -1,0 +1,436 @@
+/* GENERAL */ 
+*{
+	  
+}
+p{
+	font-size: 62.5%;
+}
+/* HTML & Body */ 
+html{
+	background: #000;
+	 
+	
+}
+body {
+}
+
+html, body{
+  overflow-x:hidden;
+  min-height: 100%; 
+}
+
+.grid{
+	display: grid; 
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
+	grid-template-areas: 
+	"head head nav nav nav"
+	"intro intro intro intro"
+	"about about about about"
+	"feature feature feature"
+	"price price price"
+	"foot foot foot foot foot"; 
+	margin: 0 auto;
+}
+
+/* Header */
+#header{
+   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background: #000;
+  color: #fff;
+}
+
+
+/* Head */ 
+
+#header_grid{
+	grid-area: head; 
+	width: 100%; 
+}
+
+/* Brand */ 
+#header-img{
+  display: flex;
+  padding: 15px 20px 15px 20px;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  vertical-align:top; 
+}
+
+#brand span{
+  display:flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#brand_txt{
+  display:flex;
+  margin:auto;
+  font-size: 2rem;
+  text-align: left;
+  font-style: oblique;
+  padding: 0px;
+  width:100%;
+}
+
+/* Navigation */ 
+#header_nav_grid{
+	width: 100%; 
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center; 
+  overflow: hidden; 
+  height: auto;
+  width: 100%;
+}
+.nav-menu {
+  grid-area: nav; 
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-link{
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 1rem; 
+  text-align: center; 
+  border: 1px solid teal; 
+  flex-grow: 1;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link a:hover {
+	color: orange;
+}
+
+.toggle{
+	width: 100%; 
+	padding: 10px 20px;  
+	background: #000; 
+	text-align: right; 
+	box-sizing: border-box; 
+	font-size: 30px; 
+	display: none;
+	 
+	 
+}
+
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+ 
+}
+/* Main Tag & Content */ 
+#content{
+	background: #fff;
+	width: 100%;
+	overflow: hidden; 
+	display: flex;
+	flex-direction:row; 
+}
+main{
+	 width: 100%; 
+}
+/* section */ 
+.section{
+	border: 1px solid red; 
+	width: 100%; 
+	display: flex;
+	flex-direction: column; 
+	justify-content:flex-start; 
+}
+
+.section p{
+	font-size: 1.3rem; 
+}
+
+.section h2{
+	font-size: 1.9rem; 
+	margin-left: 1.8%; 
+}
+
+.section p{
+	margin-left: 2.2%; 
+}
+
+/* Intro */ 
+#intro_div{
+	grid-area: intro;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#intro_div h2{
+	width: 100%; 
+}
+
+.text_box {
+	width: 100%; 
+	padding: 8px; 
+	margin: 5px; 
+	border: 2px solid #000; 
+}
+
+.btn{
+	margin: 0 auto; 
+	margin-top:10px; 
+	color:orange;
+	background-color: #000; 
+	border: 1px double white; 
+	padding:  10px 20px; 
+	cursor: pointer; 
+	font-weight: bold;
+	width: 100%;
+}
+
+.btn:hover{
+	background-color: yellow;
+	color: #000; 
+	border: 1px solid black; 
+}
+
+#form-box{
+	border: 8px double #000; 
+	background-color: orange;
+	padding: 10px 10px 25px 10px;
+	width: 65%;  
+	margin: 10px; 
+	display: flex; 
+	flex-direction: column; 
+}
+
+#form-box h2{
+	text-align: center; 
+}
+
+#form-box hr{
+	font-weight: bold; 
+	border-top: 2px solid #000; 
+	width: 65%; 
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.form_div{
+	margin: 0 auto; 
+}
+
+.form{
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .text_box{
+	width: 150%; 
+}
+
+
+#intro_form{
+	display:flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#login-register-div{
+	display:flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* About */ 
+#about_div{
+	grid-area: about; 
+}
+/* Feature */ 
+#feature_div{
+	flex-direction: row;
+}
+
+/* Look up Responsive videos */ 
+#video-fig{
+	display: block; 
+	padding: 10px;
+	width: 50%; 
+	background-color: orange; 
+	border: 5px double black; 
+}
+.video-div{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */ 
+	padding-top: 25px; 
+	height: 0; 
+	 
+}
+.video-div iframe{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+/* Foot */ 
+#footer{
+	padding: 2rem; 
+	background-color: red;
+}
+/* Media Queries */  
+/* Tablets / iPads (Portraits and Landscape) */
+@media only screen and (min-width: 836px) and (max-width: 960px){
+
+}
+
+/* Smaller Tablets & SmartPhones (Portraits and Landscape) */
+@media only screen and (min-width: 240px) and (max-width: 835px){
+
+.grid{
+	display: grid; 
+	grid-template-areas: 
+	"toggle toggle toggle toggle"
+	"brand brand brand brand"
+	"nav nav nav nav"
+	"intro intro intro intro"
+	"about about about about"
+	"feature feature feature"
+	"price price price"
+	"foot foot foot foot foot"; 
+	margin: 0 auto;
+}
+
+#header{
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+	position: fixed; 
+	z-index:999;
+	
+}
+
+
+/* Navigation */ 
+
+#brand_txt{
+	display: none;  
+}
+
+
+#brand{
+	border: 1px solid red; 
+	align-items: center; 
+}
+
+  #brand span{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+#header-img{
+	align-items: center; 
+}
+#nav-bar{
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	width: 100%;
+	margin: 0 auto; 
+	
+}
+.nav-menu{
+	flex-direction: column;
+	align-items: center;
+	justify-content:center; 
+    text-align:center;
+	padding: 10px; 
+	width: 100%; 
+	border: 1px solid yellow; 
+	/* display: none;  */ 
+	
+}
+
+.nav-link{
+	width: 90%;
+	margin: 0 auto; 
+	flex-grow: 0;
+}
+
+
+  
+.toggle{
+	display: block;	
+}
+
+#toggle_holder{
+	float:right; 
+	display: block;	
+	cursor: pointer; 
+	border: 1px solid lime; 
+	padding: 10px; 
+}
+
+  
+  
+  
+  /* Intro_Div */ 
+#intro_div {
+	width: 100%;
+	margin-top: 60%; 
+}
+#form-box{
+	  width: 70%;
+  }
+.form .text_box{
+	width: 100%; 
+}
+
+#video-fig{
+	display: block; 
+	padding: 10px;
+	width: 84.5%;
+	background-color: orange; 
+	border: 5px double black; 
+	margin: 0 auto; 
+}
+.video-div{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */ 
+	padding-top: 25px; 
+	height: 0; 
+	 
+}
+.video-div iframe{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+
+}
